@@ -30,6 +30,37 @@
       word-spacing: 0.5cm;
     }
 
+    @media only screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header nav {
+    margin-top: 10px;
+  }
+
+  .header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header nav ul li {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .header img {
+    margin-bottom: 10px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+}
+
     .header img {
       max-width: 100px;
       height: fit-content;
@@ -133,7 +164,48 @@
       bottom: 0;
       width: 100%;
     }
-    
+      @media only screen and (max-width: 767px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .header nav ul {
+        margin-top: 10px;
+      }
+
+      .header nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .content {
+        margin-top: 60px;
+      }
+    }
+
+   
+        /* Media Query for Phone Version */
+        @media only screen and (max-width: 600px) {
+            header, footer {
+                font-size: 16px;
+            }
+
+            section {
+                font-size: 14px;
+            }
+        }
+
+        /* Media Query for Computer Version */
+        @media only screen and (min-width: 601px) {
+            header, footer {
+                font-size: 24px;
+            }
+
+            section {
+                font-size: 18px;
+            }
+        }
   </style>
 </head>
 <body>
@@ -143,7 +215,7 @@
       <img src="photos/university of ghana.png" alt="Teacher's Photo">
       <nav>
         <ul>
-          <li><i><b><a href="inddx.html">Home</a></b></i></li>
+          <li><i><b><a href="index.html">Home</a></b></i></li>
           <li><i><b><a href="research.html">Research</a></b></i></li>
           <li><i><b><a href="teaching.html">Teaching</a></b></i></li>
           <li><i><b><a href="publication.html">Publication</a></b></i></li>
