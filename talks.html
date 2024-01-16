@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Teacher's Website</title>
   <style>
-    /* Reset default margin and padding */
     body, h1, h2, h3, h4, h5, h6, ul, li, p {
       margin:0;
       padding: 0;
@@ -20,13 +19,14 @@
     .header {
       display: flex;
       justify-content: space-between;
-      height: 120px;
+      height: 100px;
       align-items: baseline;
       background-color: #0d7691;
       background-image: url("photos/wallaper.jpg");
       background-position: center;
+      background-size: cover;
       color: white;
-      padding: 20px;
+      padding: 40px;
       word-spacing: 0.5cm;
     }
 
@@ -68,7 +68,6 @@
       flex: 1;
       font-size: 15px;
       line-height: 25px;
-      margin: 20p;
       text-align: justify;
       position: relative;
       opacity: 100px;
@@ -93,15 +92,14 @@
       background-color: #e0d6d6;
       padding: 20px;
       text-align: left;
-      line-height: cm;
       text-emphasis-color: gray;
       font-size: 15px;
       position: relative;
-      transition: all 0.3s ease; /* Transition for hover effect */
+      transition: all 0.3s ease;
     }
 
     .left-panel:hover {
-      background-color: #c0b1b1; /* Change background color on hover */
+      background-color: #c0b1b1; 
     }
     .left-panel img {
       max-width: 200px;
@@ -113,16 +111,16 @@
     .main-content {
       flex: 1;
       padding: 20px;
-      display: none; /* Hide by default */
+      display: none; 
       margin: 100px;
       margin-top: 10px;
-      background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+      background-color: rgba(255, 255, 255, 0.8);
       position: relative;
-      z-index: 1; /* Ensure content is above the background image */
+      z-index: 1;
     }
 
     .main-content.active {
-      display: block; /* Show when active */
+      display: block ;
     }
 
     .footer {
@@ -143,7 +141,7 @@
       <img src="photos/university of ghana.png" alt="Teacher's Photo">
       <nav>
         <ul>
-          <li><i><b><a href="inddx.html">Home</a></b></i></li>
+          <li><i><b><a href="index.html">Home</a></b></i></li>
           <li><i><b><a href="research.html">Research</a></b></i></li>
           <li><i><b><a href="teaching.html">Teaching</a></b></i></li>
           <li><i><b><a href="publication.html">Publication</a></b></i></li>
