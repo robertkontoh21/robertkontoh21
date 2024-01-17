@@ -95,8 +95,6 @@
       text-emphasis-color: gray;
       font-size: 15px;
       position: relative;
-      left: -250px;
-      transition: left 0.3s ease-in-out;
     }
 
     .left-panel:hover {
@@ -162,8 +160,6 @@
         </ul>
       </nav>
     </header>
-
-    <button class="toggle-btn" onclick="toggleLeftPanel()">Toggle Left Panel</button>
 
   <div class="content">
     <div class="left-panel">
@@ -258,24 +254,6 @@
   <footer class="footer">
     &copy; University of Ghana
   </footer>
-  <script>
-    function toggleLeftPanel() {
-      const leftPanel = document.getElementById('leftPanel');
-      const content = document.querySelector('.content');
-
-      // Toggle left panel
-      leftPanel.style.left = leftPanel.style.left === '0px' ? '-250px' : '0px';
-
-      // Adjust content margin based on left panel visibility
-      content.style.marginLeft = leftPanel.style.left === '0px' ? '250px' : '0';
-
-      // Automatically hide left panel after 5 seconds
-      setTimeout(() => {
-        leftPanel.style.left = '-250px';
-        content.style.marginLeft = '0';
-      }, 5000);
-    }
-  </script>
 </div>
 
 </body>
